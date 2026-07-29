@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Coffee Nook — кофе, который пахнет домом</title>
+  <meta name="description" content="Coffee Nook — уютная кофейня с домашним кофе, свежей выпечкой и тёплой атмосферой." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="#top">Coffee Nook</a>
+    <nav class="nav" aria-label="Основная навигация">
+      <a href="#about">О нас</a>
+      <a href="#menu">Меню</a>
+      <a href="#gallery">Галерея</a>
+      <a href="#contacts">Контакты</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-label="Coffee Nook">
+      <div class="hero__media" aria-hidden="true"></div>
+      <div class="hero__veil" aria-hidden="true"></div>
+      <div class="hero__content">
+        <h1 class="hero__title">Coffee Nook</h1>
+        <p class="hero__subtitle">Кофе, который пахнет домом</p>
+        <a class="btn" href="#menu">Посмотреть меню</a>
+      </div>
+    </section>
+
+    <section id="about" class="section about reveal">
+      <div class="about__text">
+        <p class="eyebrow">О нас</p>
+        <h2>Маленький уголок для медленного утра</h2>
+        <p>
+          Coffee Nook — локальная кофейня на углу тихой улицы. Мы варим зерно
+          небольшого обжарщика, печём круассаны по утрам и оставляем место
+          за стойкой для разговора. Без суеты, без очередей «на вынос за 30 секунд» —
+          только тёплый свет, запах кофе и спокойный ритм.
+        </p>
+      </div>
+      <figure class="about__photo">
+        <img
+          src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=1200&q=80"
+          alt="Уютный интерьер кофейни с чашкой кофе на деревянном столе"
+          loading="lazy"
+          width="1200"
+          height="900"
+        />
+      </figure>
+    </section>
+
+    <section id="menu" class="section menu reveal">
+      <div class="section__intro">
+        <p class="eyebrow">Меню</p>
+        <h2>То, что варим и печём каждый день</h2>
+      </div>
+      <div class="menu__grid">
+        <article class="menu-card">
+          <h3>Капучино</h3>
+          <p>Эспрессо, молоко и мягкая пенка</p>
+          <span class="price">280 ₽</span>
+        </article>
+        <article class="menu-card">
+          <h3>Флэт уайт</h3>
+          <p>Двойной эспрессо и бархатистое молоко</p>
+          <span class="price">300 ₽</span>
+        </article>
+        <article class="menu-card">
+          <h3>Раф</h3>
+          <p>Эспрессо, сливки и ванильный сироп</p>
+          <span class="price">340 ₽</span>
+        </article>
+        <article class="menu-card">
+          <h3>Фильтр</h3>
+          <p>Сезонный лот, чистый и прозрачный вкус</p>
+          <span class="price">260 ₽</span>
+        </article>
+        <article class="menu-card">
+          <h3>Круассан</h3>
+          <p>Сливочный, слоёный, из утренней выпечки</p>
+          <span class="price">220 ₽</span>
+        </article>
+        <article class="menu-card">
+          <h3>Сырник</h3>
+          <p>Домашний, с ягодным соусом</p>
+          <span class="price">290 ₽</span>
+        </article>
+      </div>
+    </section>
+
+    <section id="gallery" class="section gallery reveal">
+      <div class="section__intro">
+        <p class="eyebrow">Галерея</p>
+        <h2>Атмосфера Coffee Nook</h2>
+      </div>
+      <div class="gallery__track" tabindex="0" aria-label="Галерея фотографий">
+        <figure class="gallery__item">
+          <img src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=900&q=80" alt="Чашка капучино на столе у окна" loading="lazy" width="900" height="700" />
+        </figure>
+        <figure class="gallery__item">
+          <img src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?auto=format&fit=crop&w=900&q=80" alt="Свежесваренный кофе в керамической чашке" loading="lazy" width="900" height="700" />
+        </figure>
+        <figure class="gallery__item">
+          <img src="https://images.unsplash.com/photo-1447933601403-0c6688de566e?auto=format&fit=crop&w=900&q=80" alt="Свежие кофейные зёрна крупным планом" loading="lazy" width="900" height="700" />
+        </figure>
+        <figure class="gallery__item">
+          <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348?auto=format&fit=crop&w=900&q=80" alt="Зёрна кофе и ручная работа бариста" loading="lazy" width="900" height="700" />
+        </figure>
+        <figure class="gallery__item">
+          <img src="https://images.unsplash.com/photo-1453614512568-c4024d13c247?auto=format&fit=crop&w=900&q=80" alt="Утренний свет в зале кофейни" loading="lazy" width="900" height="700" />
+        </figure>
+      </div>
+    </section>
+
+    <section id="contacts" class="section contacts reveal">
+      <div class="section__intro">
+        <p class="eyebrow">Контакты</p>
+        <h2>Заходите в гости</h2>
+      </div>
+      <div class="contacts__layout">
+        <div class="contacts__info">
+          <div class="contact-block">
+            <h3>Адрес</h3>
+            <p>ул. Садовая, 14<br />Санкт-Петербург</p>
+          </div>
+          <div class="contact-block">
+            <h3>Часы работы</h3>
+            <p>Ежедневно<br />8:00–21:00</p>
+          </div>
+          <div class="contact-block">
+            <h3>Телефон</h3>
+            <p><a href="tel:+78123456789">+7 (812) 345-67-89</a></p>
+          </div>
+          <div class="contact-block">
+            <h3>Соцсети</h3>
+            <div class="socials">
+              <a href="#" aria-label="Telegram">Telegram</a>
+              <a href="#" aria-label="VK">VK</a>
+              <a href="#" aria-label="Instagram">Instagram</a>
+            </div>
+          </div>
+        </div>
+        <div class="contacts__map" role="img" aria-label="Карта: ул. Садовая, 14">
+          <div class="map-placeholder">
+            <span>ул. Садовая, 14</span>
+            <small>Карта скоро появится</small>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> Coffee Nook</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
