@@ -21,14 +21,18 @@
     </nav>
   </header>
 
+  <div class="grain" aria-hidden="true"></div>
+
   <main id="top">
     <section class="hero" aria-label="Coffee Nook">
       <div class="hero__media" aria-hidden="true"></div>
       <div class="hero__veil" aria-hidden="true"></div>
+      <div class="hero__rays" aria-hidden="true"></div>
+      <canvas class="hero__particles" aria-hidden="true"></canvas>
       <div class="hero__content">
-        <h1 class="hero__title">Coffee Nook</h1>
-        <p class="hero__subtitle">Кофе, который пахнет домом</p>
-        <a class="btn" href="#menu">Посмотреть меню</a>
+        <h1 class="hero__title" data-split>Coffee Nook</h1>
+        <p class="hero__subtitle" data-blur-in>Кофе, который пахнет домом</p>
+        <a class="btn magnet" href="#menu">Посмотреть меню</a>
       </div>
     </section>
 
@@ -43,9 +47,9 @@
           только тёплый свет, запах кофе и спокойный ритм.
         </p>
       </div>
-      <figure class="about__photo">
+      <figure class="about__photo glare">
         <img
-          src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=1200&q=80"
+          src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=1200&q=80"
           alt="Уютный интерьер кофейни с чашкой кофе на деревянном столе"
           loading="lazy"
           width="1200"
@@ -59,33 +63,33 @@
         <p class="eyebrow">Меню</p>
         <h2>То, что варим и печём каждый день</h2>
       </div>
-      <div class="menu__grid">
-        <article class="menu-card">
+      <div class="menu__grid reveal-stagger">
+        <article class="menu-card spotlight glare">
           <h3>Капучино</h3>
           <p>Эспрессо, молоко и мягкая пенка</p>
           <span class="price">280 ₽</span>
         </article>
-        <article class="menu-card">
+        <article class="menu-card spotlight glare">
           <h3>Флэт уайт</h3>
           <p>Двойной эспрессо и бархатистое молоко</p>
           <span class="price">300 ₽</span>
         </article>
-        <article class="menu-card">
+        <article class="menu-card spotlight glare">
           <h3>Раф</h3>
           <p>Эспрессо, сливки и ванильный сироп</p>
           <span class="price">340 ₽</span>
         </article>
-        <article class="menu-card">
+        <article class="menu-card spotlight glare">
           <h3>Фильтр</h3>
           <p>Сезонный лот, чистый и прозрачный вкус</p>
           <span class="price">260 ₽</span>
         </article>
-        <article class="menu-card">
+        <article class="menu-card spotlight glare">
           <h3>Круассан</h3>
           <p>Сливочный, слоёный, из утренней выпечки</p>
           <span class="price">220 ₽</span>
         </article>
-        <article class="menu-card">
+        <article class="menu-card spotlight glare">
           <h3>Сырник</h3>
           <p>Домашний, с ягодным соусом</p>
           <span class="price">290 ₽</span>
@@ -98,21 +102,24 @@
         <p class="eyebrow">Галерея</p>
         <h2>Атмосфера Coffee Nook</h2>
       </div>
-      <div class="gallery__track" tabindex="0" aria-label="Галерея фотографий">
-        <figure class="gallery__item">
+      <div class="gallery__track reveal-stagger" tabindex="0" aria-label="Галерея фотографий">
+        <figure class="gallery__item glare">
           <img src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=900&q=80" alt="Чашка капучино на столе у окна" loading="lazy" width="900" height="700" />
         </figure>
-        <figure class="gallery__item">
+        <figure class="gallery__item glare">
           <img src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?auto=format&fit=crop&w=900&q=80" alt="Свежесваренный кофе в керамической чашке" loading="lazy" width="900" height="700" />
         </figure>
-        <figure class="gallery__item">
+        <figure class="gallery__item glare">
           <img src="https://images.unsplash.com/photo-1447933601403-0c6688de566e?auto=format&fit=crop&w=900&q=80" alt="Свежие кофейные зёрна крупным планом" loading="lazy" width="900" height="700" />
         </figure>
-        <figure class="gallery__item">
+        <figure class="gallery__item glare">
           <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348?auto=format&fit=crop&w=900&q=80" alt="Зёрна кофе и ручная работа бариста" loading="lazy" width="900" height="700" />
         </figure>
-        <figure class="gallery__item">
+        <figure class="gallery__item glare">
           <img src="https://images.unsplash.com/photo-1453614512568-c4024d13c247?auto=format&fit=crop&w=900&q=80" alt="Утренний свет в зале кофейни" loading="lazy" width="900" height="700" />
+        </figure>
+        <figure class="gallery__item glare">
+          <img src="images/cafe-window.jpg" alt="Чашка кофе у окна кофейни" loading="lazy" width="900" height="700" />
         </figure>
       </div>
     </section>
